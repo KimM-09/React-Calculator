@@ -1,0 +1,194 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #calculator {
+    display: grid;
+    grid-template-areas:
+      "display display display display"
+      "clear clear divide multiply "
+      "seven eight nine add"
+      "four five six subtract"
+      "one two three decimal"
+      "zero zero equals equals";
+      grid-template-columns: 50px 50px 50px 50px;
+    gap: 1px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #2b2d42;
+  }
+  
+  .display {
+    text-align: right;
+    background-color: #edf2f4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .answer {
+    font-size: 2rem;
+    height: 2rem;
+    color: black;
+    margin-right: 3px;
+  }
+  
+  .equation {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    color: #adb5bd;
+    margin-right: 5px;
+  }
+  
+  button {
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid;
+    background-color: #778da9;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    border: none;
+    background-color: #415a77;
+    color: #fff;
+  }
+  
+  #display {
+    grid-area: display;
+  }
+  
+  #clear {
+    grid-area: clear;
+  }
+  
+  #divide {
+    grid-area: divide;
+  }
+  
+  #multiply {
+    grid-area: multiply;
+  }
+  
+  #subtract {
+    grid-area: subtract;
+  }
+  
+  #seven {
+    grid-area: seven;
+  }
+  
+  #eight {
+    grid-area: eight;
+  }
+  
+  #nine {
+    grid-area: nine;
+  }
+  
+  #add {
+    grid-area: add;
+  }
+  
+  #four {
+    grid-area: four;
+  }
+  
+  #five {
+    grid-area: five;
+  }
+  
+  #six {
+    grid-area: six;
+  }
+  
+  #one {
+    grid-area: one;
+  }
+  
+  #two {
+    grid-area: two;
+  }
+  
+  #three {
+    grid-area: three;
+  }
+  
+  #equals {
+    grid-area: equals
+  }
+  
+  #zero {
+    grid-area: zero
+  };
+  
+  #decimal {
+    grid-area: decimal;
+  }
+
+.screen {
+    height: 40px;
+    font-size: 1.5em;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.buttonRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #d5d5d5;
+}
+
+button:active {
+    background-color: #c0c0c0;
+}
+
+/* Styles for the equals button */
+.equals {
+    background-color: #4caf50;
+    /* Green background */
+    color: white;
+    /* White text */
+}
+
+.equals:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+/* Styles for the clear button */
+.clear {
+    background-color: #ff5722;
+    /* Red background */
+    color: white;
+    /* White text */
+}
+
+.clear:hover {
+    background-color: #e64a19;
+    /* Darker red on hover */
+}
